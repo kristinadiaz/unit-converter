@@ -7,21 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <body>
+    <body onload="meterToFeet()">
         <main>
         <h1>Metric/Imperial unit conversion</h1>
-        <h2 id="count-el">0</h2>
+        <h2 id="number-el">0</h2>
         </main>
         <div>
             <h3>Length(Meter/Feet)</h3>
-                <span id="meter-el">0 meters = 0.000 feet |</span> 
-                <span>0 feet = 0.000 meters</span>
+               <p id="meter-el"></p>
             <h3>Volume (Liters/Gallons)</h3>
-                <span>0 liters = 0.000 gallons |</span>
-                <span>0 gallons = 0.000 liters</span>
+                <p></p>
             <h3>Mass (Kilograms/Pounds)</h3>
-                <span>0 kilos = 0.000 pounds |</span>
-                <span>0 pounds = 0.000 kilos</span>
+                <p></p>
         </div>
         <script src="index.js"></script>
     </body>
