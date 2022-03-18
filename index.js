@@ -12,15 +12,17 @@ function length() {
 };
 
 function volume() {
-    let liters = numberEl / 3.785;
-    let gallons = numberEl * 3.785;
-    volumeEl.textContent = `${numberEl} liters = ${gallons.toFixed(3)} | ${numberEl} gallons = ${liters.toFixed(3)} liters`;
+    let gallons = numberEl / 3.785;
+    let liters = numberEl * 3.785;
+    volumeEl.textContent = `${numberEl} liters = ${gallons.toFixed(3)} gallons | ${numberEl} gallons = ${liters.toFixed(3)} liters`;
 };
 
 function mass() {
-    // kilos to pounds
-    // pounds to kilos
+    let pounds = numberEl * 2.205
+    let kilos = numberEl / 2.205
+    massEl.textContent = `${numberEl} kilos = ${pounds.toFixed(3)} pounds | ${numberEl} pounds = ${kilos.toFixed(3)} kilos`;
 };
 
 length();
 volume();
+mass();
