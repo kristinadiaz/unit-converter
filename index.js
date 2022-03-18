@@ -1,26 +1,18 @@
-// 0 meters = 0.000 feet | 0 feet = 0.00 meters
-// 0 liters = 0.000 gallons | 0 gallons = 0.00 liters
-// 0 kilos = 0.00 pounds | 0 pounds = 0.000 kilos
+let numberEl = prompt('Please enter a number: ')
+document.getElementById('number-el').textContent = numberEl
 
-let number = 20
-let numberEl = document.getElementById("number-el").textContent = number
-let meterEl = document.getElementById("meter-el")
-// console.log(meterEl)
+let lengthEl = document.getElementById('length-el')
+let volumeEl = document.getElementById('volume-el')
+let massEl = document.getElementById('mass-el')
 
-function meterToFeet() {
-    let sum = numberEl * 3.281
-    meterEl.textContent = "20 meters = " + sum.toFixed(3) + " feet | "
+function length() {
+    let feet = numberEl * 3.281
+    let meter = numberEl / 3.281
+    lengthEl.textContent = `${numberEl} meters = ${feet.toFixed(3)} feet | ${numberEl} feet = ${meter.toFixed(3)} meters`
 }
 
-function feetToMeter() {
-    let sum = numberEl / 3.281
-    meterEl = "20 feet = " + sum.toFixed(3) + " meters"
-}
+function volume() {}
 
-function litersToGallons() {}
+function mass() {}
 
-function gallonsToLiters() {}
-
-function kilosToPounds() {}
-
-function poundsToKilos() {}
+length()
